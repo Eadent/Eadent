@@ -1,0 +1,172 @@
+@charset "utf-8";
+/*
+ * Purpose: CSS Document for Eadent.
+ *
+ * Created: Eamonn A. Duffy, 18-Feb-2011. http://www.Eadent.com/
+ */
+html, body
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	background-color: #FF8F40; /* #FFAD73; */
+}
+body
+{
+	font-family: Arial, Arial, Helvetica, sans-serif;
+}
+div
+{
+/*	border: 1px solid rgb(255, 255, 255); */
+}
+h1, h2
+{
+	font-family: Palatino Linotype, Book Antiqua, Palatino, serif;
+}
+h3
+{
+	color: white;
+	background-color: inherit;
+	margin: 0;
+}
+h4
+{
+	font-size: 1.8em;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+h1
+{
+	padding-left: 30px;
+	padding-top: 5px;
+	margin-bottom: 1px;
+	font-variant: small-caps;
+	color: white;
+	background-color: inherit;
+}
+h2
+{
+	padding-left: 30px;
+	margin-top: 1px;
+	font-size: 1em;
+	color: #A64D00;
+	background-color: inherit;
+}
+h1 a, h1 a:link, h1 a:visited
+{
+	text-decoration: none;
+	color: white;
+	background-color: inherit;
+}
+#Wrapper
+{
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 960px;
+}
+#Header
+{
+	position: relative;
+	border-top: 1px solid #FF6A00;	/* TODO: Collapsing Margins - understand more. */
+	height: 99px;
+	width: 100%;
+	color: white;
+	background-color: #FF6A00;
+	margin: 0;
+	padding: 0;
+}
+#Container
+{
+	position: relative;
+	margin: 0 auto;
+	border-top: 1px solid #A64500;
+	border-right: 1px solid #A64500;
+	color: black; /* #A64D00; */
+	background-color: #FFAD73; /* #FF8F40; */ /* #FFB473; */
+}
+#Left
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 150px;
+/*	min-height: 450px; */
+	color: white;
+	background-color: #FF6A00;
+	margin: 0px;
+	padding: 0px;
+}
+#Information
+{
+	color: #A64D00;
+	background-color: inherit;
+	margin-top: 20px;
+	margin-left: 10px;
+	font-size: 0.9em;
+}
+#Middle
+{
+	margin-left: 160px;
+	width: 799px;
+	min-height: 400px;
+	color: inherit;
+	background-color: inherit;
+	font-size: .9em;
+	padding: 0;
+	border-right: 1px solid #A64500;
+}
+#Right
+{
+}
+#Footer
+{
+	position: relative;
+	color: white;
+	background-color: #FF6A00;
+	width: 100%;
+	height: 90px;
+	text-align: center;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #A64500;
+}
+#Container
+{
+}
+#Left
+{
+}
+#Main
+{
+}
+#Footer
+{
+}
+#Left ul
+{
+	display: block;
+	margin: 0px;
+	padding-left: 12px;
+	line-height: 2em;
+	list-style-type: none;
+}
+#Left ul li
+{
+	border-bottom: #b0c457 1px solid;
+}
+#Left a
+{
+	display: block;
+	text-decoration: none;
+	color: #380335;
+	background-color: inherit;
+}
+#Left a:hover
+{
+	text-decoration: none;
+	color: #b0c457;
+	background-color: #BF6B30;
+}
