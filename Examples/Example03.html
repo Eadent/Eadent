@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 28-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+    </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Array of Numbers that has been entered.
+	var g_Numbers = [];	// Or: new Array();
+	
+	// Function/method to update the various results based on the Numbers entered so far.
+	var UpdateResults = function()
+	{
+		var Count = g_Numbers.length;	// The number of Numbers.
+		var Sum = 0;					// The Sum of the Numbers.
+		var Average = 0;				// The Average of the Numbers.
+		var Minimum = Number.MAX_VALUE;	// The Minimum Number.
+		var Maximum = Number.MIN_VALUE;	// The Maximum Number.
+		
+		var NumbersList = "";	// The full list of the Numbers, comma separated.
+		
+		for (Index = 0; Index < Count; Index++)
+		{
+			var WorkNumber = g_Numbers[Index];
+			Sum += WorkNumber;
+			if (WorkNumber < Minimum)
+				Minimum = WorkNumber;
+			if (WorkNumber > Maximum)
+				Maximum = WorkNumber;
+			NumbersList += WorkNumber;
+			if (Index < (Count - 1))
+				NumbersList += ", ";
+		}
+		
+		try
+		{
+			Average = Sum / Count;
+		}
+		catch (Exception)
+		{
+		}
+		
+		if (isNaN(Average))
+			Average = 0;
+			
+		$("#SpanCount").text(Count);
+		$("#SpanSum").text(Sum);
+		$("#SpanAverage").text(Average);
+		$("#SpanMinimum").text(Minimum);
+		$("#SpanMaximum").text(Maximum);
+		$("#SpanNumbersList").text(NumbersList);
+	}
+
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// Cause the initial results to be displayed.
+		UpdateResults();
+		
+		// Cause the initial Input Focus to go to the Number To Add Text Box.
+		$("#TextNumberToAdd").focus();
+		
+		// The Add Button Click method.
+		$("#ButtonAdd").click(function()
+		{
+			var NumberToAdd = parseInt($("#TextNumberToAdd").val());	// Attempt to convert the Text Box contents to an Integer.
+			
+			if (! isNaN(NumberToAdd))	// If it is a valid Number ...
+			{
+				g_Numbers[g_Numbers.length] = NumberToAdd;	// ... Add it to the list.
+				UpdateResults();
+			}
+			$("#TextNumberToAdd").val("");	// Clear the Text Box contents.
+			$("#TextNumberToAdd").focus();	// Return Input Focus to the Text Box.
+		});
+		
+		// The Clear All Button Click method.
+		$("#ButtonClearAll").click(function()
+		{
+			g_Numbers = [];	// Clear out the Numbers array.
+			UpdateResults();
+			$("#TextNumberToAdd").val("");	// Clear the Text Box contents.
+			$("#TextNumberToAdd").focus();	// Return Input Focus to the Text Box.
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <p>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+        //-->
+        </script>
+        <br />
+        <br />
+		Number to add:
+		<input type="text" id="TextNumberToAdd" maxlength="20" />
+		<input type="button" id="ButtonAdd" value="Add" />
+		<input type="button" id="ButtonClearAll" value="Clear All" />
+		<br /><br />
+		Count:
+		<span id="SpanCount"></span>
+		<br /><br />
+		Sum:
+		<span id="SpanSum"></span>
+		<br /><br />
+		Average:
+		<span id="SpanAverage"></span>
+		<br /><br />
+		Minimum:
+		<span id="SpanMinimum"></span>
+		<br /><br />
+		Maximum:
+		<span id="SpanMaximum"></span>
+		<br /><br />
+		Numbers:
+		<br />
+		<span id="SpanNumbersList"></span>
+		<br /><br />
+		<br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+        </p>
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+    </form>
+    </body>
+</html>

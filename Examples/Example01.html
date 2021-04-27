@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 28-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+		<style type="text/css">
+		td
+		{
+			border: 1px #CCC solid;
+			padding: 5px;
+		}
+		</style>
+    </head>
+    <body>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <p>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+			document.write("<br /><br />");
+			
+			document.write("<table style='font-family: Courier New, monospace;'><tbody>");
+			//document.write("<table><tbody>");
+			
+			// Do a pseudo (lazy) header row.
+			document.write("<tr>");
+			document.write("<td>Row</td><td>Expression</td><td>Value</td><td>Expression</td><td>Value</td>");
+			document.write("</tr>");
+			
+			var Row = 1;
+			var Num = 0;
+			
+			// Example: + 1
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 100;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num = Num + 1;
+			document.write("<td>After Num = Num + 1</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: - 1
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 200;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num = Num - 1;
+			document.write("<td>After Num = Num - 1</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: ++
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 0;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num++;
+			document.write("<td>After Num++</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: [-][-]
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 23;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			var NumMinusMinusString = "Num-" + "-";	// To get the file to pass ...
+			eval(NumMinusMinusString);				// ... www.w3.org HTML validation.
+			document.write("<td>After " + NumMinusMinusString + "</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: +=
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 300;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num += 12;
+			document.write("<td>After Num += 12</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: -=
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 400;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num -= 20;
+			document.write("<td>After Num -= 20</td><td>" + Num + "</td>");
+			document.write("</tr>");
+			
+			// Example: * 12
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 5;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num = Num * 12;
+			document.write("<td>After Num = Num * 12</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: / 12
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 96;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num = Num / 12;
+			document.write("<td>After Num = Num / 12</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: *= 12
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 6;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num *= 12;
+			document.write("<td>After Num *= 12</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: /= 12
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			Num = 108;
+			document.write("<td>Num</td><td>" + Num + "</td>");
+			Num /= 12;
+			document.write("<td>After Num /= 12</td><td>" + Num + "</td>");
+			document.write("</tr>");
+
+			// Example: For loop and automatic toString() of a number.
+			var Numbers = [];
+			Numbers[0] = 12;
+			Numbers[1] = 41;
+			Numbers[2] = 66;
+			
+			document.write("<tr>");
+			document.write("<td>" + Row++ + "</td>");
+			document.write("<td>Numbers.length</td><td>" + Numbers.length + "</td>");
+			document.write("<td>Numbers</td><td>" + Numbers + "</td>");
+			document.write("</tr>");
+			
+			var NumbersList = "";
+			
+			for (Index = 0; Index < Numbers.length; Index++)
+			{
+				var WorkNumber = Numbers[Index];
+				NumbersList += WorkNumber;
+				if (Index < (Numbers.length - 1))
+					NumbersList += ", ";
+
+				document.write("<tr>");
+				document.write("<td>" + Row++ + "</td>");
+				document.write("<td>Index</td><td>" + Index + "</td>");
+				document.write("<td>NumbersList</td><td>" + NumbersList + "</td>");
+				document.write("</tr>");
+			}
+
+			document.write("</tbody></table>");
+        //-->
+        </script>
+        <br />
+        <br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+        </p>
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+	</form>
+    </body>
+</html>

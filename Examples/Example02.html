@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 28-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+   </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Common Button Click method for Button 1 (via straight JavaScript) and 2 (via jQuery).
+	var CommonButtonClick = function(Button, ButtonNo)
+	{
+		Button.disabled = "disabled";
+		Button.value = "Pressed " + ButtonNo;
+		alert("Hello There! You pressed: " + Button.id);
+	}
+	
+	// jQuery statement general format: selector.action(parameters);
+
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// Cause the initial Input Focus to go to the first Button.
+		$("#Button1").focus();
+		
+		// The Button 2 Click method.
+		$("#Button2").click(function()
+		{
+			CommonButtonClick(this, 2);
+		});
+		
+		// The Button 3 Click method.
+		$("#Button3").click(function()
+		{
+			var $this = $(this);
+			$this.attr("disabled", "disabled")
+			var This = $this;	// Just showing that the '$' prefix on local variables is a convention rather than a requirement.
+			This.attr("value", "Pressed 3");
+			alert("Welcome! You pressed: " + $this.attr("id"));
+		});
+		
+		// The Button 4 Click method.
+		jQuery("#Button4").click(function()
+		{
+			var ThisButton = jQuery(this);
+			ThisButton.attr("disabled", "disabled")
+			ThisButton.attr("value", "Pressed 4");
+			alert("Hello Again! You pressed: " + ThisButton.attr("id"));
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <p>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+        //-->
+        </script>
+        <br />
+        <br />
+		<input type="button" id="Button1" value="Button 1" onclick="CommonButtonClick(this, 1);" />
+		<input type="button" id="Button2" value="Button 2" />
+		<input type="button" id="Button3" value="Button 3" />
+		<input type="button" id="Button4" value="Button 4" />
+		<br /><br />
+		<br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+        </p>
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+    </form>
+    </body>
+</html>

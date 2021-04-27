@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 29-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+    </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Object Manager class.
+	var ObjectManager = function()
+	{
+		var m_Id = [];		// Array that keeps the Id of an Object.
+		var m_Object = [];	// Array that keeps the corresponding instance of the Object.
+
+		// Public method(s).
+
+		// Register an Object.
+		var Register = function(Object)
+		{
+			if (m_Id.length != m_Object.length)
+				alert("ObjectManager map has been corrupted.");
+			
+			var Count = m_Id.length;
+			
+			m_Id[Count] = Object.Id();
+			m_Object[Count] = Object;
+		}
+		
+		this.Register = Register;	// TODO: Determine if there is an alternative to this. Perhaps it makes the method public?
+		
+		// Get an Object.
+		var Get = function(Id)
+		{
+			if (m_Id.length != m_Object.length)
+				alert("ObjectManager map has been corrupted.");
+
+			var Object = null;
+			
+			var bFound = false;
+			var Index = 0;
+			
+			while ((! bFound) && (Index < m_Id.length))
+			{
+				if (m_Id[Index] == Id)
+				{
+					Object = m_Object[Index];
+					bFound = true;
+				}
+				else
+					Index++;
+			}
+			
+			if (! bFound)
+				alert("ObjectManager is being asked to Get(" + Id + "), which does not exist.");
+				
+			return Object;
+		}
+		
+		this.Get = Get;
+	}
+	
+	// Div Data class.
+	var DivData = function(Id)
+	{
+		var m_Id = Id;								// Id of the Div.
+		var $Id = "#" + Id;							// jQuery Id of the Div.
+		var m_$HoverInSpanId = $Id + "HoverIn";		// jQuery Id of the Hover In span for the Div.
+		var m_$HoverOutSpanId = $Id + "HoverOut";	// jQuery Id of the Hover Out span for the Div.
+		var m_$ClickSpanId = $Id + "Click";			// jQuery Id of the Click span for the Div.
+		
+		var m_NumHoverIn = 0;	// Number of Hover In Events.
+		var m_NumHoverOut = 0;	// Number of Hover Out Events.
+		var m_NumClicks = 0;	// Number of Mouse Clicks.
+		
+		// Private method(s).
+		
+		// Update the Div Status fields.
+		var UpdateStatus = function()
+		{
+			$(m_$HoverInSpanId).text(m_NumHoverIn);
+			$(m_$HoverOutSpanId).text(m_NumHoverOut);
+			$(m_$ClickSpanId).text(m_NumClicks);
+		}
+		
+		// Public method(s).
+		
+		// Return the Div's Id.
+		var Id = function()
+		{
+			return m_Id;
+		}
+		
+		this.Id = Id;
+		
+		// Respond to a Hover In Event.
+		var HoverIn = function()
+		{
+			m_NumHoverIn++;
+			UpdateStatus();
+		}
+		
+		this.HoverIn = HoverIn;
+		
+		// Respond to a Hover Out Event.
+		var HoverOut = function()
+		{
+			m_NumHoverOut++;
+			UpdateStatus();
+		}
+		
+		this.HoverOut = HoverOut;
+		
+		// Respond to a Click event.
+		var Click = function()
+		{
+			m_NumClicks++;
+			UpdateStatus();
+		}
+		
+		this.Click = Click;
+	}
+
+	// The one and only Object Manager.
+	var g_ObjectManager = new ObjectManager();	// TODO: Look into making ObjectManager a singleton.
+	
+	// Keep a count of how many Mouse Related Events we respond to.
+	var g_NumMouseRelatedEvents = 0;
+	
+	// Update the status to reflect the most recent Mouse Related Event(s).
+	var UpdateMouseRelatedStatus = function(MouseRelatedEvent)
+	{
+		g_NumMouseRelatedEvents++;
+		$("#NumMouseEvents").text(g_NumMouseRelatedEvents);
+		$("#MouseRelatedEvent").text(MouseRelatedEvent);
+	}
+	
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// Instantiate and register the Div Data objects.
+		g_ObjectManager.Register(new DivData("DivLeft"));
+		g_ObjectManager.Register(new DivData("DivMiddle"));
+		g_ObjectManager.Register(new DivData("DivRight"));
+
+		// DivMouse class Hover method.
+		$("div.DivMouse").hover(
+			function()	// Hover In Event.
+			{
+				var Id = $(this).attr("id");
+				var Object = g_ObjectManager.Get(Id);
+				Object.HoverIn();
+				$("#Colour").text($(this).css("background-color"));
+				UpdateMouseRelatedStatus(Id + ": Mouse Hover In");
+			},
+			function()	// Hover Out Event.
+			{
+				var Id = $(this).attr("id");
+				var Object = g_ObjectManager.Get(Id);
+				Object.HoverOut();
+				$("#Colour").text("");
+				UpdateMouseRelatedStatus(Id + ": Mouse Hover Out");
+			}
+		);
+		
+		// DivMouse class click method.
+		$("div.DivMouse").click(function()
+		{
+			var Id = $(this).attr("id");
+			var Object = g_ObjectManager.Get(Id);
+			Object.Click();
+			UpdateMouseRelatedStatus(Id + ": Mouse Click");
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <div>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+        //-->
+        </script>
+        <br /><br />
+		<hr />
+		<br />
+		<strong>Mouse Related Events With JavaScript Classes:</strong><br /><br />
+		<div id="DivLeft" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #FF0000">
+		Left Div.
+		<br /><br />
+		Hover In:
+		<span id="DivLeftHoverIn"></span>
+		<br /><br />
+		Hover Out:
+		<span id="DivLeftHoverOut"></span>
+		<br /><br />
+		Click:
+		<span id="DivLeftClick"></span>
+		<br /><br />
+		</div>
+		<div id="DivMiddle" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #00FF00">
+		Middle Div.
+		<br /><br />
+		Hover In:
+		<span id="DivMiddleHoverIn"></span>
+		<br /><br />
+		Hover Out:
+		<span id="DivMiddleHoverOut"></span>
+		<br /><br />
+		Click:
+		<span id="DivMiddleClick"></span>
+		<br /><br />
+		</div>
+		<div id="DivRight" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #0000FF">
+		Right Div.
+		<br /><br />
+		Hover In:
+		<span id="DivRightHoverIn"></span>
+		<br /><br />
+		Hover Out:
+		<span id="DivRightHoverOut"></span>
+		<br /><br />
+		Click:
+		<span id="DivRightClick"></span>
+		<br /><br />
+		</div>
+		<div style="clear: both;">
+		</div>
+		<br />
+		Number of Mouse Related Events:
+		<span id="NumMouseEvents"></span>
+		<br /><br />
+		Mouse Related Event:
+		<span id="MouseRelatedEvent"></span>
+		<br /><br />
+		Colour:
+		<span id="Colour"></span>
+		<br /><br />
+		<hr />
+        <br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+        </div>
+    </form>
+    </body>
+</html>

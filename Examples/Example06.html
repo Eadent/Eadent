@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 29-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+    </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Keep a count of how many Mouse Related Events we respond to.
+	var g_NumMouseRelatedEvents = 0;
+	
+	// Update the status to reflect the most recent Mouse Related Event(s).
+	var UpdateMouseRelatedStatus = function(MouseRelatedEvent)
+	{
+		g_NumMouseRelatedEvents++;
+		$("#NumMouseEvents").text(g_NumMouseRelatedEvents);
+		$("#MouseRelatedEvent").text(MouseRelatedEvent);
+	}
+
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// DivMouse class Hover method.
+		$("div.DivMouse").hover(
+			function()	// Hover In Event.
+			{
+				$("#Colour").text($(this).css("background-color"));
+				UpdateMouseRelatedStatus($(this).attr("id") + ": Mouse Hover In");
+			},
+			function()	// Hover Out Event.
+			{
+				$("#Colour").text("");
+				UpdateMouseRelatedStatus($(this).attr("id") + ": Mouse Hover Out");
+			}
+		);
+		
+		// DivMouse class click method.
+		$("div.DivMouse").click(function()
+		{
+			UpdateMouseRelatedStatus($(this).attr("id") + ": Mouse Click");
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <div>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+        //-->
+        </script>
+        <br /><br />
+		<hr />
+		<br />
+		<strong>Mouse Related Events:</strong><br /><br />
+		<div id="DivLeft" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #FF0000">
+		Left Div.
+		</div>
+		<div id="DivMiddle" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #00FF00">
+		Middle Div.
+		</div>
+		<div id="DivRight" class="DivMouse" style="position: relative; float: left; width: 250px; height: 200px; margin: 15px; color: #FFFFFF; background-color: #0000FF">
+		Right Div.
+		</div>
+		<div style="clear: both;">
+		</div>
+		<br />
+		Number of Mouse Related Events:
+		<span id="NumMouseEvents"></span>
+		<br /><br />
+		Mouse Related Event:
+		<span id="MouseRelatedEvent"></span>
+		<br /><br />
+		Colour:
+		<span id="Colour"></span>
+		<br /><br />
+		<hr />
+        <br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+        </div>
+    </form>
+    </body>
+</html>

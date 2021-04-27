@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 29-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+    </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// Cause the initial Input Focus to go to the Go Button.
+		$("#ButtonGo").focus();
+		
+		// The Go Button Click method.
+		$("#ButtonGo").click(function()
+		{
+			var Speed = null;
+			
+			if ($("#CheckEnableSpeed").attr("checked"))	// We will use the Speed specified.
+			{
+				switch ($("input[name=SpeedGroup]:checked").val())
+				{
+				case "1" :	// Slow.
+				
+					Speed = "slow";
+					break;
+					
+				case "2" :	// Medium.
+				
+					Speed = "medium";
+					break;
+					
+				case "3" :	// Fast.
+				
+					Speed = "fast";
+					break;
+					
+				case "4" :	// 1s.
+				
+					Speed = 1000;	// In ms.
+					break;
+					
+				case "5" :	// 3s.
+				
+					Speed = 3000;	// In ms.
+					break;
+					
+				case "6" :	// 6s.
+				
+					Speed = 6000;	// In ms.
+					break;
+					
+				default :
+				
+					alert("Unrecognised Speed Group Radio: Value = " + $("input[name=SpeedGroup]:checked").val());
+					break;
+				}
+			}
+				
+			var $Paragraph = $("#ParaEffect");
+			var bParagraphVisible = $Paragraph.is(":visible");
+			
+			switch ($("#Effects").val())
+			{
+			case "1" :	// Show/Hide.
+			
+				if (bParagraphVisible)	// Paragraph is Visible.
+				{
+					if (Speed == null)	// No Speed specified.
+						$Paragraph.hide();
+					else
+						$Paragraph.hide(Speed);
+				}
+				else	// Paragraph is Hidden.
+				{
+					if (Speed == null)	// No Speed specified.
+						$Paragraph.show();
+					else
+						$Paragraph.show(Speed);
+				}
+				break;
+			
+			case "2" :	// Fade In/Out.
+			
+				if (bParagraphVisible)	// Paragraph is Visible.
+				{
+					if (Speed == null)	// No Speed specified.
+						$Paragraph.fadeOut();
+					else
+						$Paragraph.fadeOut(Speed);
+				}
+				else	// Paragraph is Hidden.
+				{
+					if (Speed == null)	// No Speed specified.
+						$Paragraph.fadeIn();
+					else
+						$Paragraph.fadeIn(Speed);
+				}
+				break;
+			
+			default:
+			
+				alert("Unrecognised Effect type: Value = " + $("#Effects").val());
+				break;
+			}
+		});
+		
+		// The Enable Speed Checkbox Click method.
+		$("#CheckEnableSpeed").click(function()
+		{
+			var bChecked = $(this).attr("checked");
+
+			if (bChecked)	// Enable Speed Group.
+			{
+				$("input.SpeedClass").removeAttr("disabled");
+			}
+			else	// Disable Speed Group.
+			{
+				$("input.SpeedClass").attr("disabled", "disabled");
+			}
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <div>
+        <script type="text/javascript">
+        <!--
+            var BrowserNow = new Date();
+            document.write("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+        //-->
+        </script>
+        <br /><br />
+		<hr />
+		<br />
+		<strong>Effects With Other UI Controls:</strong><br />
+		<p id="ParaEffect">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada tincidunt tortor, id euismod tortor fermentum vel. Aenean pulvinar, arcu a iaculis sagittis, nunc dolor malesuada urna, ac dapibus ligula tortor ut metus. Sed adipiscing facilisis purus, aliquam dapibus erat rhoncus non. Nulla arcu enim, consequat vitae elementum ut, adipiscing ac ante. Cras eleifend justo nec lacus tempus blandit. In hac habitasse platea dictumst. Morbi convallis, sapien eu malesuada feugiat, libero sapien accumsan nisl, ac tempus justo felis eget felis.
+		</p>
+		<select id="Effects" size="1">
+			<option selected="selected"  value="1">Show/Hide</option>
+			<option value="2">Fade In/Out</option>
+		</select>
+		<input type="button" id="ButtonGo" value="Go" />
+		<input type="checkbox" id="CheckEnableSpeed" checked="checked" value="Enable Speed" />Enable Speed
+		<input type="radio" class="SpeedClass" name="SpeedGroup" checked="checked" value="1" />Slow
+		<input type="radio" class="SpeedClass" name="SpeedGroup" value="2" />Medium
+		<input type="radio" class="SpeedClass" name="SpeedGroup" value="3" />Fast
+		<input type="radio" class="SpeedClass" name="SpeedGroup" value="4" />1s
+		<input type="radio" class="SpeedClass" name="SpeedGroup" value="5" />3s
+		<input type="radio" class="SpeedClass" name="SpeedGroup" value="6" />6s
+		<br /><br />
+		<hr />
+		<br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+        </div>
+    </form>
+    </body>
+</html>

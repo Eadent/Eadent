@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created: Eamonn A. Duffy, 31-Jan-2011. -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="-1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>Eamonn Duffy - JavaScript Example</title>
+		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+		<!-- The following, whilst the original/main site, does not support https loading:
+		<script src="http://code.jquery.com/jquery-latest.pack.js" type="text/javascript"></script>
+		-->
+		<style type="text/css">
+		.TableDefault
+		{
+			background-color: white;
+			color: black;
+		}
+		.TableFirst
+		{
+			background-color: blue;
+			color: yellow;
+		}
+		.TableSecond
+		{
+			background-color: red;
+			color: green;
+		}
+		.TableHover
+		{
+			background-color: purple;
+			color: inherit;
+		}
+		.TableSelected
+		{
+			background-color: orange;
+			color: black;
+		}
+		</style>
+    </head>
+    <body>
+	<script type="text/javascript">
+	<!--
+	// Perform relevant jQuery activity only when the Document and DOM are ready.
+	$(document).ready(function()
+	{
+		// Update the Time.
+		var UpdateTime = function()
+		{
+			var BrowserNow = new Date();
+			$("#SpanTime").text("[Browser] " + BrowserNow.toDateString() + " - " + BrowserNow.toTimeString());
+		}
+		
+		// Update the initial time.
+		UpdateTime();
+		
+		// Start a timer to update the time.
+		window.setInterval(function()
+		{
+			UpdateTime();
+		}, 500);
+		
+		// Cause the initial Input Focus to go to the First Button.
+		$("#ButtonFirst").focus();
+		
+		// First Button Click method.
+		$("#ButtonFirst").click(function()
+		{
+			$("#Music tbody tr:even").addClass("TableFirst");
+		});
+
+		// Second Button Click method.
+		$("#ButtonSecond").click(function()
+		{
+			$("#Music tbody tr:odd").addClass("TableSecond");
+		});
+		
+		// Reset Button Click method.
+		$("#ButtonReset").click(function()
+		{
+			$("#Music tbody tr.TableFirst").removeClass("TableFirst");
+			$("#Music tbody tr.TableSecond").removeClass("TableSecond");
+			$("#Music tbody tr.TableSelected").removeClass("TableSelected");
+		});
+
+		// Music Table Hover method.
+		$("#Music tbody tr").hover(
+			function()	// Hover In Event.
+			{
+				$(this).addClass("TableHover");
+			},
+			function()	// Hover Out Event.
+			{
+				$(this).removeClass("TableHover");
+			}
+		);
+		
+		// Music Table Click method.
+		$("#Music tbody tr").click(function()
+		{
+			$(this).toggleClass("TableSelected");
+		});
+	});
+	//-->
+	</script>
+    <form id="FormExample" action="">
+        <noscript><p><br />This page requires JavaScript. Your browser does not support JavaScript for this page.<br /><br /></p></noscript>
+        <div>
+		<span id="SpanTime"></span>
+        <br /><br />
+		<hr />
+		<br />
+		<strong>A Table:</strong><br /><br />
+		<table id="Music" class="TableDefault">
+		<thead>
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Role</td>
+			<td>Location</td>
+			<td>Price</td>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>1</td>
+			<td>Johnny Stardust</td>
+			<td>Front-Man</td>
+			<td>Belfast</td>
+			<td>€60</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Beau Dandy</td>
+			<td>Singer</td>
+			<td>Cork</td>
+			<td>€50</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Mo' Fat</td>
+			<td>Producer</td>
+			<td>Dublin</td>
+			<td>€100</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Kelly Kelly</td>
+			<td>Singer</td>
+			<td>Galway</td>
+			<td>€40</td>
+		</tr>
+		<tr>
+			<td>20</td>
+			<td>Darth Fader</td>
+			<td>DJ</td>
+			<td>Carlow</td>
+			<td>€200</td>
+		</tr>
+		<tr>
+			<td>112</td>
+			<td>Glendatronix</td>
+			<td>Keytarist</td>
+			<td>Wexford</td>
+			<td>€35</td>
+		</tr>
+		</tbody>
+		</table>
+		<br />
+		<input type="button" id="ButtonFirst" value="First" />
+		<input type="button" id="ButtonSecond" value="Second" />
+		<input type="button" id="ButtonReset" value="Reset" />
+		<hr />
+        <br />
+		Copyright &copy; 2011<script type="text/javascript">
+		<!--
+            var BrowserNow = new Date();
+			if (BrowserNow.getFullYear() > 2011)
+				document.write("-" + BrowserNow.getFullYear());
+		//-->
+		</script>
+		Eamonn Duffy. All Rights Reserved.
+		<p>
+			<script type="text/javascript">
+			<!--
+				document.write("<a href='http://validator.w3.org/check?uri=" + location.href + "'><img\n");
+				document.write("style='border:0;width:88px;height:31px'\n");
+				if (location.protocol == "https:")
+					document.write("src='https://www.w3.org/Icons/valid-xhtml10'\n");
+				else
+					document.write("src='http://www.w3.org/Icons/valid-xhtml10'\n");
+				document.write("alt='Valid XHTML 1.0 Strict' /></a>\n");
+				if (location.protocol == "https:")
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'>Validate CSS</a>\n");
+				else
+				{
+					document.write("<a href='http://jigsaw.w3.org/css-validator/validator?uri=" + location.href + "'><img\n");
+					document.write("style='border:0;width:88px;height:31px'\n");
+					document.write("src='http://jigsaw.w3.org/css-validator/images/vcss'\n");
+					document.write("alt='Valid CSS!' /></a>\n");
+				}
+			//-->
+			</script>
+		</p>
+        </div>
+    </form>
+    </body>
+</html>
