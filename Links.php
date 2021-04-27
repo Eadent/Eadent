@@ -83,6 +83,9 @@
 		<p>
 		<a target="_blank" href="http://OrganisationalRescue.com/">Organisational Rescue</a>
 		</p>
+		<p>
+		<a target="_blank" href="https://www.Canva.com/">Canva Design</a>
+		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
 		</p>
