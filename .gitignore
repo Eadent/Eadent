@@ -3,6 +3,12 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# ASP.NET Specific.
+App_Data
+
+# Certificates et al.
+.well-known
+
 # User-specific files
 *.rsuser
 *.suo

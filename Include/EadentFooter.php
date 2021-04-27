@@ -16,7 +16,7 @@
 	<div id="Footer">
 	<br />
 	<p>
-	<a href="Home.php">Home</a> - <a href="About.php">About</a> - <a href="Contact.php">Contact</a> - <a href="Links.php">Links</a>
+	<a href="Home.php">Home</a> - <a href="About.php">About</a> - <a href="Contact">Contact</a> - <a href="Links.php">Links</a>
 	</p>
 	<p>
 		Copyright &copy; <?php echo $Utility->GetCopyrightYears(); ?> Eadent. All Rights Reserved.
