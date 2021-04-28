@@ -66,7 +66,7 @@
 			<a target="_blank" href="https://Therapy.Rapture.global/">Rapture Global - Therapy</a>
 		</p>
 		<p>
-			<a target="_blank" href="https://www.Okpal.com/rapture/">Rapture Global - First Funding Attmpt</a>
+			<a target="_blank" href="https://www.Okpal.com/rapture/">Rapture Global - First Funding Attempt</a>
 		</p>
 		<p>
 			<a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
