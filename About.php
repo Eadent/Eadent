@@ -57,30 +57,33 @@
 ?>
 		<div id="Middle">
 		<p>
-		I - <strong><span style="color: #F10804">Eamonn Duffy</span>
-		<span style="color: #A64500">(Eadent)</span></strong>
-		- have over
-		<?php
-			echo $Utility->GetEamonnNumYears();
-		?>
-		years of software development experience, ranging in
-		scope from small embedded real-time to small-enterprise systems, including
-		custom Systems Integration work. I have extensive experience of 'green-field
-		site' software developments, including systems where the hardware and
-		mechanical aspects have also been developed concurrently from scratch.
+			I - <strong><span style="color: #F10804">Eamonn Duffy</span>
+			<span style="color: #A64500">(Eadent)</span></strong>
+			- have over
+			<?php
+				echo $Utility->GetEamonnNumYears();
+			?>
+			years of Software Development experience, ranging in
+			scope from Small Embedded Real-Time to Small-Enterprise Systems, including
+			custom Systems Integration work.
+		</p>
+		<p>
+			I have extensive experience of 'Green-Field
+			Site' Software Developments, including Systems where the Hardware and
+			Mechanical aspects have also been developed concurrently from scratch.
 		</p>
 		<p>
 		I currently live in Dublin, Ireland.
 		</p>
 		<p>
-		My main skills have traditionally been used in Microsoft Windows, .NET platforms and real-time
-		(embedded or otherwise) environments.
+			My main skills have traditionally been used in Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, and Real-Time (Hard, Embedded or otherwise)
+			Environments.
 		</p>
 		<p>
-		In more recent times, I have moved into the role of a Principal Software Engineer.
-		I officially (rather than de-facto) Mentor colleagues. I combine this with my up to date in-depth Technical Knowledge.
-		For example, I have recently Architected an Angular 6 Web Site with a .NET Framework 4.7.2 Web Service, developing software whilst
-		mentoring two colleagues and code reviewing their work, all done with the aid of Jira and TeamCity and Octopus Deploy CI/CD tools.
+			I have also worked with (amongst other things) Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, TeamCity, JetBrains YouTrack, Git and GitHub, Linux and Azure.
+		</p>
+		<p>
+			For my most recent work in C#, SQL and Azure, please refer to <a target="_blank" href="https://www.Rapture.global/">https://www.Rapture.global/</a>.
 		</p>
 		<p>
 		<a href="http://www.Eadent.com/EamonnDuffyCV-Long.html">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [HTML Page]</a>

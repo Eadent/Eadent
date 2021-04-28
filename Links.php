@@ -60,31 +60,34 @@
 ?>
 		<div id="Middle">
 		<p>
-		<a target="_blank" href="https://www.Rapture.global/">Rapture Global</a>
+			<a target="_blank" href="https://www.Rapture.global/">Rapture Global</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://Therapy.Rapture.global/">Rapture Global - Therapy</a>
+			<a target="_blank" href="https://Therapy.Rapture.global/">Rapture Global - Therapy</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
+			<a target="_blank" href="https://www.Okpal.com/rapture/">Rapture Global - First Funding Attmpt</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://www.Boyle.global/">Boyle Web Site</a>
+			<a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://www.Ghis.eu/">HSE EVE GHIS</a>
+			<a target="_blank" href="https://www.Boyle.global/">Boyle Web Site</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://Web.Ghis.eu/Index.html">Web Design at HSE EVE GHIS</a>
+			<a target="_blank" href="https://www.Ghis.eu/">HSE EVE GHIS</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://Web.Ghis.eu/Portfolio_EAD.html">My Web Design Portfolio at HSE EVE GHIS</a>
+			<a target="_blank" href="https://Web.Ghis.eu/Index.html">Web Design at HSE EVE GHIS</a>
 		</p>
 		<p>
-		<a target="_blank" href="http://OrganisationalRescue.com/">Organisational Rescue</a>
+			<a target="_blank" href="https://Web.Ghis.eu/Portfolio_EAD.html">My Web Design Portfolio at HSE EVE GHIS</a>
 		</p>
 		<p>
-		<a target="_blank" href="https://www.Canva.com/">Canva Design</a>
+			<a target="_blank" href="http://OrganisationalRescue.com/">Organisational Rescue</a>
+		</p>
+		<p>
+			<a target="_blank" href="https://www.Canva.com/">Canva Design</a>
 		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />

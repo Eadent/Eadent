@@ -53,92 +53,95 @@
 		<div id="Middle">
 		<p>
 		I - <strong><span style="color: #F10804">Eamonn Duffy</span>
-		<span style="color: #A64500">(Eadent)</span></strong> - specialise in the full lifecycle development of products
-		where a significant software aspect is involved.
+		<span style="color: #A64500">(Eadent)</span></strong> - specialise in the Full Lifecycle Development of Products
+		where a significant Software aspect is involved.
 		</p>
 		<p>							
-		I can co-develop products in certain circumstances.
+		I can Co-Develop Products in certain circumstances.
 		</p>
 		<p>
-		And I am willing to negotiate the provision of certain consultancy services. For example, I:
+		And I am willing to negotiate the provision of certain Consultancy Services. For example, I:
 		</p>
 		<ul>
 			<li>
-				Will collaborate with you to identify issues and requirements, and develop
-					solutions.
+				Will collaborate with you to identify Issues and Requirements, and Develop
+					Solutions.
 			</li>
 			<li>
-				Have experience across a range of industries, platforms and technologies.
+				Have experience across a range of Industries, Platforms and Technologies.
 			</li>
 			<li>
-				Have traditionally worked with Microsoft Windows, .NET platforms and real-time (embedded or otherwise)
-					environments, although have now also started working with Java, XML and PHP.
+				Have traditionally worked with Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, and Real-Time (Hard, Embedded or otherwise)
+					Environments.
 			</li>
 			<li>
-				Am currently available for permanent, contract or consultancy work.
+				Have also worked with (amongst other things) Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, TeamCity, JetBrains YouTrack, Git and GitHub, Linux and Azure.
+			</li>
+			<li>
+				Am currently available for Contract or Consultancy work.
 			</li>
 		</ul>
 		<p>
-		If you are a small to medium sized company seeking consultancy services, and any of the following are true for you, I can help:
+		If you are a Company seeking Consultancy Services, and any of the following are true for you, I can help:
 		</p>
 		<ul>
 			<li>
-			Want to reduce the risk of designing a poor system architecture.
+			Want to reduce the risk of Designing a poor System Architecture.
 			</li>
 			<li>
-			Want to get two or more, new or existing, independent systems interacting with
+			Want to get two or more, new or existing, Independent Systems interacting with
 			each other.
 			</li>
 			<li>
-			No software development capability in-house and need help getting a bespoke
-			solution developed.
+			No Software Development capability In-House and need help getting a Bespoke
+			Solution Developed.
 			</li>
 			<li>
-			Want to hire software developers and do not know how.
+			Want to hire Software Developers and do not know how.
 			</li>
 			<li>
-			Want to engage a large consultancy for a project and want help up-front doing
+			Want to engage a large Consultancy for a Project and want help up-front doing
 			so.
 			</li>
 			<li>
-			Porting or rewriting an existing application for a new platform.
+			Porting or rewriting an existing Application for a new Platform.
 			</li>
 			<li>
-			Need assistance establishing requirements.
+			Need assistance establishing Requirements.
 			</li>
 			<li>
-			Need assistance with software design and development process.
+			Need assistance with Software Design and Development Process.
 			</li>
 			<li>
-			Need assistance with application architecture design and review.
+			Need assistance with Application Architecture Design and Review.
 			</li>
 			<li>
 			Need temporary assistance due to departure or illness of one or more key
 			personnel.
 			</li>
 			<li>
-			Software development project approaching a major deadline with a growing list
+			Software Development Project approaching a major deadline with a growing list
 			of problems to be resolved.
 			</li>
 		</ul>
 		<p>
-		I can also help if you simply need "hand-holding" or regular, objective and external "sanity-check" reviews. Examples:
+		I can also help if you simply need "Hand-Holding" or regular, objective and external "Sanity-Check" Reviews. Examples:
 		</p>
 		<ul>
 			<li>
-			Developing software in-house.
+			Developing Software in-house.
 			</li>
 			<li>
-			Moving to a new software technology, approach&nbsp;or language.
+			Moving to a new Software Technology, Approach or Language.
 			</li>
 			<li>
-			Moving to a newer version of a compiler or development environment.
+			Moving to a newer Version of a Development Environment.
 			</li>
 			<li>
-			Embarking on a major "green-field site" software development project.
+			Embarking on a major "Green-Field Site" Software Development Project.
 			</li>
 			<li>
-			Have a relatively inexperienced or junior software development team.
+			Have a relatively inexperienced or Junior Software Development Team.
 			</li>
 		</ul>
 		<p style="margin: 0; padding: 0;">
