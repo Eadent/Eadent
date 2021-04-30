@@ -86,9 +86,9 @@
 			For my most recent work in C#, SQL and Azure, please refer to <a target="_blank" href="https://www.Rapture.global/">https://www.Rapture.global/</a>.
 		</p>
 		<p>
-		<a href="https://www.Eadent.com/EamonnDuffyCV-Long.pdf">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [PDF]</a>
+		<a target="_blank" href="https://www.Eadent.com/EamonnDuffyCV-Long.pdf">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [PDF]</a>
 			<br /><br />
-		<a href="https://www.Eadent.com/EamonnDuffyCV-Long.docx">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [MS Word Document, Virus Scanned]</a>
+		<a target="_blank" href="https://www.Eadent.com/EamonnDuffyCV-Long.docx">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [MS Word Document, Virus Scanned]</a>
 		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
