@@ -92,6 +92,12 @@
 		<p>
 			10. <a target="_blank" href="https://www.Canva.com/">Canva Design</a>
 		</p>
+		<p>
+			11. <a target="_blank" href="https://www.GitHub.com/Eadent/">Eadent GitHub Repositories</a>
+		</p>
+		<p>
+			12. <a target="_blank" href="https://www.GitHub.com/Rapture-Global/">Rapture Global GitHub Repositories</a>
+		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
 		</p>
