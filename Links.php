@@ -98,6 +98,12 @@
 		<p>
 			12. <a target="_blank" href="https://www.GitHub.com/Rapture-Global/">Rapture Global GitHub Repositories</a>
 		</p>
+		<p>
+			13. <a target="_blank" href="https://www.Eadent.com/Videos/The National D-Day Memorial - 3 Overlord Cir, Bedford, VA 24523, United States - 20150417_133020.mp4">The National D-Day Memorial, Virginia 24523, United States (Video)</a>
+		</p>
+		<p>
+			14. <a target="_blank" href="https://www.BritishLegion.org.uk/">The Royal British Legion</a>
+		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
 		</p>
