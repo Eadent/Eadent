@@ -15,7 +15,7 @@
 ?>
 	<div id="Header">
 		<div style="padding-left: 10px; float: left;">
-			<a href="https://www.Eadent.com/"><img src="/Images/Eadent - www.Canva.com - 2021-04-27-01.png" alt="www.Eadent.com" title="www.Eadent.com" style="height: 100px;" /></a>
+			<a href="/"><img src="/Images/Eadent - www.Canva.com - 2021-04-27-01.png" alt="www.Eadent.com" title="www.Eadent.com" style="height: 100px;" /></a>
 		</div>
 		<div style="float: left;">
 			<h1><a href="Home.php">Eadent</a></h1>
