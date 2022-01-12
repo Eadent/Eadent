@@ -60,49 +60,40 @@
 ?>
 		<div id="Middle">
 		<p>
-			&nbsp;0. <a target="_blank" href="https://www.Mozilla.org/en-US/firefox/new/">Mozilla Firefox Web Browser</a>
+			&nbsp;0. <a target="_blank" href="https://www.Rapture.global/">Rapture Global</a>
 		</p>
 		<p>
-			&nbsp;1. <a target="_blank" href="https://www.Rapture.global/">Rapture Global</a>
+			&nbsp;1. <a target="_blank" href="https://Therapy.Rapture.global/">Rapture Global - Therapy</a>
 		</p>
 		<p>
-			&nbsp;2. <a target="_blank" href="https://Therapy.Rapture.global/">Rapture Global - Therapy</a>
+			&nbsp;2. <a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
 		</p>
 		<p>
-			&nbsp;3. <a target="_blank" href="https://www.Okpal.com/rapture/">Rapture Global - First Funding Attempt</a>
+			&nbsp;3. <a target="_blank" href="https://www.Boyle.global/">Boyle Web Site</a>
 		</p>
 		<p>
-			&nbsp;4. <a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
+			&nbsp;4. <a target="_blank" href="https://www.Ghis.eu/">HSE EVE GHIS</a>
 		</p>
 		<p>
-			&nbsp;5. <a target="_blank" href="https://www.Boyle.global/">Boyle Web Site</a>
+			&nbsp;5. <a target="_blank" href="https://Web.Ghis.eu/Index.html">Web Design at HSE EVE GHIS</a>
 		</p>
 		<p>
-			&nbsp;6. <a target="_blank" href="https://www.Ghis.eu/">HSE EVE GHIS</a>
+			&nbsp;6. <a target="_blank" href="https://Web.Ghis.eu/Portfolio_EAD.html">My Web Design Portfolio at HSE EVE GHIS</a>
 		</p>
 		<p>
-			&nbsp;7. <a target="_blank" href="https://Web.Ghis.eu/Index.html">Web Design at HSE EVE GHIS</a>
+			&nbsp;7. <a target="_blank" href="https://www.Canva.com/">Canva Design</a>
 		</p>
 		<p>
-			&nbsp;8. <a target="_blank" href="https://Web.Ghis.eu/Portfolio_EAD.html">My Web Design Portfolio at HSE EVE GHIS</a>
+			&nbsp;8. <a target="_blank" href="https://www.GitHub.com/Eadent/">Eadent GitHub Repositories</a>
 		</p>
 		<p>
-			&nbsp;9. <a target="_blank" href="http://OrganisationalRescue.com/">Organisational Rescue</a>
+			&nbsp;9. <a target="_blank" href="https://www.GitHub.com/Rapture-Global/">Rapture Global GitHub Repositories</a>
 		</p>
 		<p>
-			10. <a target="_blank" href="https://www.Canva.com/">Canva Design</a>
+			10. <a target="_blank" href="https://www.Eadent.com/Videos/The National D-Day Memorial - 3 Overlord Cir, Bedford, VA 24523, United States - 20150417_133020.mp4">The National D-Day Memorial, Virginia 24523, United States (Video)</a>
 		</p>
 		<p>
-			11. <a target="_blank" href="https://www.GitHub.com/Eadent/">Eadent GitHub Repositories</a>
-		</p>
-		<p>
-			12. <a target="_blank" href="https://www.GitHub.com/Rapture-Global/">Rapture Global GitHub Repositories</a>
-		</p>
-		<p>
-			13. <a target="_blank" href="https://www.Eadent.com/Videos/The National D-Day Memorial - 3 Overlord Cir, Bedford, VA 24523, United States - 20150417_133020.mp4">The National D-Day Memorial, Virginia 24523, United States (Video)</a>
-		</p>
-		<p>
-			14. <a target="_blank" href="https://www.BritishLegion.org.uk/">The Royal British Legion</a>
+			11. <a target="_blank" href="https://www.BritishLegion.org.uk/">The Royal British Legion</a>
 		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
