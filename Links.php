@@ -32,7 +32,7 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="-1" />
 		<meta name="description" content="Eadent specialises in Software and Web Design and Development" />
-		<meta name="keywords" content="Eadent, Eamonn Duffy, Software, Web, Design, Development" />
+		<meta name="keywords" content="Eadent, Eamonn Duffy, Eamonn Anthony Duffy Enterprises, Software, Web, Design, Development" />
         <title>Eadent - Links</title>
 		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>

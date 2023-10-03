@@ -32,7 +32,7 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="-1" />
 		<meta name="description" content="Eadent specialises in Software and Web Design and Development" />
-		<meta name="keywords" content="Eadent, Eamonn Duffy, Software, Web, Design, Development" />
+		<meta name="keywords" content="Eadent, Eamonn Duffy, Eamonn Anthony Duffy Enterprises, Software, Web, Design, Development" />
         <title>Eadent - About</title>
 		<!-- For the latest jQuery at Google (for https loading support), refer to: http://code.google.com/apis/libraries/devguide.html -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
@@ -58,7 +58,7 @@
 		<div id="Middle">
 		<p>
 			I - <strong><span style="color: #F10804">Eamonn Duffy</span>
-			<span style="color: #A64500">(Eadent)</span></strong>
+			<span style="color: #A64500">(Eadent - Eamonn Anthony Duffy Enterprises)</span></strong>
 			- have over
 			<?php
 				echo $Utility->GetEamonnNumYears();
@@ -81,9 +81,6 @@
 		</p>
 		<p>
 			I have also worked with (amongst other things) Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, TeamCity, JetBrains YouTrack, Git and GitHub, Linux and Azure.
-		</p>
-		<p>
-			For my most recent work in C#, SQL and Azure, please refer to <a target="_blank" href="https://www.Rapture.global/">https://www.Rapture.global/</a>.
 		</p>
 		<p>
 		<a target="_blank" href="https://www.Eadent.com/EamonnDuffyCV-Long.pdf">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [PDF]</a>

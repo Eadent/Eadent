@@ -32,7 +32,7 @@
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="-1" />
 		<meta name="description" content="Eadent specialises in Software and Web Design and Development" />
-		<meta name="keywords" content="Eadent, Eamonn Duffy, Software, Web, Design, Development" />
+		<meta name="keywords" content="Eadent, Eamonn Duffy, Eamonn Anthony Duffy Enterprises, Software, Web, Design, Development" />
         <title>Eadent - Home</title>
 		<link rel="stylesheet" type="text/css" href="Css/Eadent.css" />
 		<script type="text/javascript">
@@ -53,7 +53,7 @@
 		<div id="Middle">
 		<p>
 		I - <strong><span style="color: #F10804">Eamonn Duffy</span>
-		<span style="color: #A64500">(Eadent)</span></strong> - specialise in the Full Lifecycle Development of Products
+		<span style="color: #A64500">(Eadent - Eamonn Anthony Duffy Enterprises)</span></strong> - specialise in the Full Lifecycle Development of Products
 		where a significant Software aspect is involved.
 		</p>
 		<p>							
@@ -77,9 +77,11 @@
 			<li>
 				Have also worked with (amongst other things) Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, TeamCity, JetBrains YouTrack, Git and GitHub, Linux and Azure.
 			</li>
+            <!--
 			<li>
 				Am currently available for Contract or Consultancy work.
 			</li>
+            -->
 		</ul>
 		<p>
 		If you are a Company seeking Consultancy Services, and any of the following are true for you, I can help:
