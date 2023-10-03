@@ -68,8 +68,8 @@
 			custom Systems Integration work.
 		</p>
 		<p>
-			I have extensive experience of 'Green-Field
-			Site' Software Developments, including Systems where the Hardware and
+			I have extensive experience of "Green-Field
+			Site" Software Developments, including Systems where the Hardware and
 			Mechanical aspects have also been developed concurrently from scratch.
 		</p>
 		<p>
