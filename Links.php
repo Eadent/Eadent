@@ -63,7 +63,7 @@
 			&nbsp;&nbsp;0. <a target="_blank" href="https://www.Rapture.global/">Rapture (Global)</a>
 		</p>
 		<p>
-			&nbsp;&nbsp;1. <a target="_blank" href="https://RaptureTherapy.global/">Rapture Therapy (Global)</a>
+			&nbsp;&nbsp;1. <a target="_blank" href="https://www.RaptureTherapy.global/">Rapture Therapy (Global)</a>
 		</p>
 		<p>
 			&nbsp;&nbsp;2. <a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
