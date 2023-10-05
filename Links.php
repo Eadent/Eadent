@@ -60,10 +60,10 @@
 ?>
 		<div id="Middle">
 		<p>
-			&nbsp;&nbsp;0. <a target="_blank" href="https://www.Rapture.global/">Rapture (Global)</a>
+			&nbsp;&nbsp;0. <a target="_blank" href="https://www.Rapture.global/">Rapture Web Site</a>
 		</p>
 		<p>
-			&nbsp;&nbsp;1. <a target="_blank" href="https://www.RaptureTherapy.global/">Rapture Therapy (Global)</a>
+			&nbsp;&nbsp;1. <a target="_blank" href="https://www.RaptureTherapy.global/">Rapture Therapy Web Site<a>
 		</p>
 		<p>
 			&nbsp;&nbsp;2. <a target="_blank" href="https://www.Duffy.global/">Duffy Web Site</a>
@@ -96,7 +96,10 @@
 			11. <a target="_blank" href="https://www.BritishLegion.org.uk/">The Royal British Legion</a>
 		</p>
 		<p>
-			12. <a target="_blank" href="https://www.WorldWarThree.global/">World War Three (Global)</a>
+			12. <a target="_blank" href="https://www.WorldWarThree.global/">World War Three Web Site</a>
+		</p>
+		<p>
+			13. <a target="_blank" href="https://www.EamonnDuffy.com/">Eamonn Duffy Web Site</a>
 		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
