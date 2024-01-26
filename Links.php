@@ -99,7 +99,10 @@
 			12. <a target="_blank" href="https://www.WorldWarThree.global/">World War Three Web Site</a>
 		</p>
 		<p>
-			13. <a target="_blank" href="https://www.EamonnDuffy.com/">Eamonn Duffy Web Site</a>
+			13. <a target="_blank" href="https://www.EamonnDuffy.com/">Eamonn Duffy's Web Site</a>
+		</p>
+		<p>
+			14. <a target="_blank" href="https://EamonnAnthonyDuffy.WordPress.com/">Eamonn Duffy's Personal Blog</a>
 		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
