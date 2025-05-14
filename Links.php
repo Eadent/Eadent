@@ -98,6 +98,9 @@
 		<p>
 			12. <a target="_blank" href="https://www.Rapture.global/">Rapture Web Site</a>
 		</p>
+		<p>
+			13. <a target="_blank" href="https://www.LestWeForget.one/">Lest We Forget Web Site</a>
+		</p>
 		<p style="margin: 0; padding: 0;">
 		<br />
 		</p>
