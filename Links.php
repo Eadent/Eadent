@@ -60,7 +60,7 @@
 ?>
 		<div id="Middle">
 		<p>
-			&nbsp;&nbsp;0. <a target="_blank" href="https://www.Eadent.com/Videos/The National D-Day Memorial - 3 Overlord Cir, Bedford, VA 24523, United States - 20150417_133020.mp4">The National D-Day Memorial, Virginia 24523, United States (Video)</a>
+			&nbsp;&nbsp;0. <a target="_blank" href="https://vimeo.com/manage/videos/1089465094">The National D-Day Memorial, Virginia 24523, United States (Video)</a>
 		</p>
 		<p>
 			&nbsp;&nbsp;1. <a target="_blank" href="https://www.BritishLegion.org.uk/">The Royal British Legion</a>
