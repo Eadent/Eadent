@@ -93,7 +93,7 @@
 			10. <a target="_blank" href="https://www.GitHub.com/Rapture-Global/">Rapture Global GitHub Repositories</a>
 		</p>
 		<p>
-			11. <a target="_blank" href="https://www.GitHub.com/Duffy-One/">Duffy-One GitHub Repositories</a>
+			11. <a target="_blank" href="https://www.GitHub.com/Duffy-One/">Duffy Group GitHub Repositories</a>
 		</p>
 		<p>
 			12. <a target="_blank" href="https://www.RaptureTherapy.global/">Rapture Therapy Web Site<a>
@@ -102,7 +102,7 @@
 			13. <a target="_blank" href="https://www.Rapture.global/">Rapture Web Site</a>
 		</p>
 		<p>
-			14. <a target="_blank" href="https://www.Duffy.one/">Duffy.one Web Site</a>
+			14. <a target="_blank" href="https://www.Duffy.one/">Duffy Group Web Site</a>
 		</p>
 		<p>
 			15. <a target="_blank" href="https://www.LestWeForget.one/">Lest We Forget Web Site</a>
