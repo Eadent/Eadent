@@ -75,7 +75,7 @@
 					Environments.
 			</li>
 			<li>
-				Have also worked with (amongst other things) Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, TeamCity, JetBrains YouTrack, Git and GitHub, Linux and Azure.
+				Have also worked with (amongst other things) Claude, Copilot, Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, Git, GitHub, GitLab, Octopus Deploy, JetBrains YouTrack, Jira and Linux.
 			</li>
             <!--
 			<li>
