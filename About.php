@@ -76,11 +76,11 @@
 		I currently live in Dublin, Ireland.
 		</p>
 		<p>
-			My main skills have traditionally been used in Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, and Real-Time (Hard, Embedded or otherwise)
+			My main skills have traditionally been used in Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
 			Environments.
 		</p>
 		<p>
-			I have also worked with (amongst other things) Claude, Copilot, Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, Git, GitHub, GitLab, Octopus Deploy, JetBrains YouTrack, Jira and Linux.
+			I have also worked with (amongst other things) Claude, Copilot, PostgreSQL, Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, Git, GitHub, GitLab, Octopus Deploy, JetBrains YouTrack, Jira and Linux.
 		</p>
 		<p>
 		<a target="_blank" href="https://www.Eadent.com/EamonnDuffyCV-Long.pdf">Eamonn Duffy's Long CV/R&eacute;sum&eacute; [PDF]</a>

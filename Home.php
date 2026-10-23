@@ -71,11 +71,11 @@
 				Have experience across a range of Industries, Platforms and Technologies.
 			</li>
 			<li>
-				Have traditionally worked with Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, and Real-Time (Hard, Embedded or otherwise)
+				Have traditionally worked with Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
 					Environments.
 			</li>
 			<li>
-				Have also worked with (amongst other things) Claude, Copilot, Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, Git, GitHub, GitLab, Octopus Deploy, JetBrains YouTrack, Jira and Linux.
+				Have also worked with (amongst other things) Claude, Copilot, PostgreSQL, Basic, Fortran, Forth, Java, HTML, CSS, JavaScript, JSON, TypeScript, XML, PHP, Xamarin, Git, GitHub, GitLab, Octopus Deploy, JetBrains YouTrack, Jira and Linux.
 			</li>
             <!--
 			<li>
