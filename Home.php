@@ -71,7 +71,7 @@
 				Have experience across a range of Industries, Platforms and Technologies.
 			</li>
 			<li>
-				Have traditionally worked with Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
+				Have traditionally worked with Assembly Language, C and C++, Microsoft Windows, SQL Server, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
 					Environments.
 			</li>
 			<li>

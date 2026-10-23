@@ -76,7 +76,7 @@
 		I currently live in Dublin, Ireland.
 		</p>
 		<p>
-			My main skills have traditionally been used in Assembly Language, C and C++, Microsoft Windows, SQL, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
+			My main skills have traditionally been used in Assembly Language, C and C++, Microsoft Windows, SQL Server, .Net (and .Net Core) and C# Platforms, Entity Framework, and Real-Time (Hard, Embedded or otherwise)
 			Environments.
 		</p>
 		<p>
